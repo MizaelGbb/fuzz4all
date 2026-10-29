@@ -1,0 +1,27 @@
+fuzzing:
+  output_folder: ../fastd/fuzzall/FuzzAll/experiment/full_run/cpp/run
+  num: 3
+  total_time: 1
+  log_level: 3
+  otf: true
+  resume: false
+  evaluate: false
+  use_hand_written_prompt: false
+  no_input_prompt: true
+  prompt_strategy: 2
+  target_name: gcc
+target:
+  language: c
+  path_documentation: config/documentation/c/c_std.md
+  path_example_code: null
+  trigger_to_generate_input: /* Please create a short program which uses new C features
+    in a complex way */
+  input_hint: '#include <stdlib.h>'
+  path_hand_written_prompt: null
+  target_string: ''
+llm:
+  temperature: 1
+  batch_size: 1
+  device: cpu
+  model_name: ollama/qwen2.5-coder:3b
+  max_length: 1024

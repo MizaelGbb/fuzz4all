@@ -1,5 +1,5 @@
 fuzzing:
-  output_folder: ../fastd/fuzzall/FuzzAll/experiment/full_run/cpp/run
+  output_folder: outputs/qwen_test_03
   num: 3
   total_time: 1
   log_level: 3

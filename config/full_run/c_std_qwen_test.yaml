@@ -1,6 +1,6 @@
 fuzzing:
   output_folder: outputs/qwen_test_03
-  num: 3
+  num: 20
   total_time: 1
   log_level: 3
   otf: true
